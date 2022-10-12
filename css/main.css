@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* Navbar */
+.navbar a:hover {
+    color: #aeaeae;
+    border-bottom: 2px solid #a40000;
+    text-decoration: none;
+}
+
+/* Seccion header */
+.title-h1 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 50px;
+    padding: 20px;
+}
+
+
+
+p {
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 0 100px;
+    margin-bottom: 15px;
+    text-decoration: wavy;
+}
+
+/* Botones de navegaciones */
+.btn {
+    display: inline-block;
+    padding: 10px;
+    color: #f0f8ff;
+    margin-top: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+
+
+
+}
+
+.btn:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #a40000;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Encabezado (presentacion) */
+.header {
+    color: #f0f8ff;
+    padding: 50px;
+    font-family: sans-serif;
+    background-size: cover;
+
+}
+
+@media screen and (max-width:425px) {
+    .title-h1 {
+        font-size: 40px;
+        padding: 15px;
+    }
+
+    p {
+        font-family: sans-serif;
+        font-size: 20px;
+        padding: 10px;
+        margin: 0px;
+        text-decoration: wavy;
+
+    }
+
+    .img-principal {
+        text-align: center;
+    }
+
+}
+
+/* Cartas de Nosotros */
+
+.cartas {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+@media screen and (max-width:768px) {
+    .cartas {
+        padding: 20px;
+    }
+}
+
+/* Seccion nosotros */
+.nosotros {
+    color: #f0f8ff;
+    padding: 15px;
+    background-image: url(../img/fondo1a.jpg) !important;
+    background-size: cover;
+}
+
+/* Seccion actividades */
+.actividades {
+    color: #f0f8ff;
+    padding: 15px;
+}
+
+/* Boxs de seccion de contacto  */
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #fff;
+    padding: 3rem;
+
+}
+
+.box-container .box {
+    height: 9rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem #00000080;
+    margin: 1rem;
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #8f0000;
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #8f0000;
+
+}
+
+.box-container .box p {
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Seccion contacto */
+
+.contacto {
+    color: #f0f8ff;
+    padding: 15px;
+    background-image: url(../img/fondob.jpg) !important;
+    background-size: cover;
+}
+
+.footer {
+    color: #f0f8ff;
+    background-color: #8f0000 !important;
+    padding: 20px;
+}
+
+/* NOSOTROS.HTML */
+
+.conoce {
+    background-image: url(../img/fondogym33.jpg);
+    background-size: cover;
+}
+
+.instalaciones {
+    background-image: url(../img/fondogym33.jpg);
+    background-size: cover;
+}
+
+
+/* Seccion conoce */
+.conoce {
+    color: #f0f8ff;
+    padding: 15px;
+}
+
+/* Seccion de actividades */
+
+.img-act {
+    padding: 15px;
+}
+
+.p-act {
+    padding: 10px;
+}
+
+/* Fondo de Horarios.html */
+
+.horarios {
+    background-image: url(../img/fondo1a.jpg) !important;
+    background-size: cover;
+    color: #f0f8ff;
+}
+
+/* Formularios */
+
+.form1 {
+    background-color: #8f0000 !important;
+    background-size: cover;
+    padding: 20px;
+}
+
