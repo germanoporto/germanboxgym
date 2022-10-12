@@ -20,55 +20,63 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark">
 
-        <div class="container-fluid">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top">
 
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.jpg" alt="Logo" height="50px" class="d-inline-block align-text-top">
-            </a>
+            <div class="container-fluid">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#inicio">
+                    <img src="img/logo.jpg" alt="Logo" height="50px" class="d-inline-block align-text-top">
+                </a>
 
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
-                    <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page"
-                            href="pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="pages/actividades.html">Actividades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="pages/horarios.html">Horarios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#contacto">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#ubicacion">Ubicación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="pages/cuestionario.html">¡Danos tu opinión!</a>
-                    </li>
-                </ul>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page"
+                                href="pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="pages/actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="pages/horarios.html">Horarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#ubicacion">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="pages/cuestionario.html">¡Danos tu opinión!</a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
+
     <!-- Encabezado -->
     <header class="header bg-dark bg-gradient" id="inicio">
         <h1 class="title-h1">BOX GYM CENTRO</h1>
 
-        <p> <b>¡Bienvenidos a nuestra página oficial!</b>
-            <!-- Imagen logo  -->
+
+        <!-- Imagen logo  -->
         <div class="img-principal">
             <img src="img/logo.jpg" style="width: 20rem;" class="img-thumbnail" alt="...">
+        </div>
+
+        <div>
+            <p class="fw-bold"> <b>¡Bienvenidos a nuestra página oficial!</b>
         </div>
 
 
@@ -79,18 +87,48 @@
         </button>
 
     </header>
-    <!-- Secciones  -->
+
+    <!-- Cuerpo de pagina con secciones  -->
     <main>
         <!-- Seccion nosotros -->
         <section class="nosotros">
-            <h2 class="title-h1">NOSOTROS</h2>
+            <h2 class="title-h2">NOSOTROS</h2>
             <p> Lorem ipsum, dolor sit amet consectetur temporibus laboriosam rem, quam, ea qu
                 od incidunt quisquam necessitatibus. Nihil nam consequuntur veritatis!</p>
-
-            <div>
-                <img src="img/nosotros3.jpg" style="width: 20rem;" class="img-thumbnail" alt="...">
-                <img src="img/nosotros2.jpg" style="width: 20rem;" class="img-thumbnail" alt="...">
+            <!-- Carrousel de imagenes -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/nosotros3.jpg" class="w-50 img-thumbnail" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/nosotros2.jpg." class="w-50 img-thumbnail" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/nosotros4.jpg" class="w-50 img-thumbnail" style="width: 20rem;" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+
+
 
             <!-- Boton hacia nosotros.html-->
 
@@ -101,7 +139,7 @@
         </section>
         <!-- Seccion actividades -->
         <section class="actividades bg-dark bg-gradient">
-            <h2 class="title-h1">ACTIVIDADES</h2>
+            <h2 class="title-h2">ACTIVIDADES</h2>
             <p> Lorem ipsum, dolor sit amet consectetur temporibus laboriosam rem, quam, ea qu
                 od incidunt quisquam necessitatibus. Nihil nam consequuntur veritatis!</p>
 
@@ -118,7 +156,7 @@
 
         <!-- Seccion de contacto -->
         <section class="contacto" id="contacto">
-            <h2 class="title-h1">Contacto</h2>
+            <h2 class="title-h2">Contacto</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eveniet tempora, expedita enim fugit
                 facere laboriosam ratione earum optio
                 necessitatibus dolorem ex provident, voluptas doloremque dicta, consectetur aut? Veniam, illum?</p>
@@ -129,17 +167,17 @@
                 <div class="box">
                     <i class="fab fa-instagram"></i>
                     <h3>Instagram</h3>
-                    <p>@boxgymcentro</p>
+                    <p class="fw-bold">@boxgymcentro</p>
                 </div>
                 <div class="box">
                     <i class="fab fa-whatsapp"></i>
                     <h3>WhatsApp</h3>
-                    <p>(011) 15 3040 3810</p>
+                    <p class="fw-bold">(011) 15 3040 3810</p>
                 </div>
                 <div class="box">
                     <i class="fab fa-facebook"></i>
                     <h3>Facebook</h3>
-                    <p>BOX GYM CENTRO</p>
+                    <p class="fw-bold">BOX GYM CENTRO</p>
                 </div>
 
             </div>
@@ -148,8 +186,8 @@
 
         <!-- Seccion ubicacion y horarios -->
         <section class="actividades bg-dark bg-gradient" id="ubicacion">
-            <h2 class="title-h1">UBICACIÓN Y HORARIOS</h2>
-
+            <h2 class="title-h2">UBICACIÓN Y HORARIOS</h2>
+            <!-- Carrousel de mapa y horarios -->
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
 
                 <div class="carousel-inner">
@@ -203,12 +241,14 @@
 
 
     </main>
+
+
     <!-- Pie de pagina -->
 
     <footer>
-
+        <!-- Seccion de Formulario -->
         <section class="footer">
-            <h2 class="title-h1">¡Quiero ser parte!</h2>
+            <h2 class="title-h2">¡Quiero ser parte!</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non qui sunt quaerat explicabo blan</p>
 
 
@@ -264,7 +304,7 @@
 
     </footer>
 
-
+    <!-- Link script -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

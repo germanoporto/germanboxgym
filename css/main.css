@@ -23,6 +23,14 @@ body {
     font-family: sans-serif;
     font-size: 50px;
     padding: 20px;
+    margin-top: 50px;
+}
+.title-h2 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 50px;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 
@@ -31,7 +39,7 @@ p {
     font-family: sans-serif;
     font-size: 20px;
     padding: 0 100px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     text-decoration: wavy;
 }
 
@@ -86,6 +94,11 @@ a {
         text-align: center;
     }
 
+
+}
+
+.img-principal {
+    margin-bottom: 20px;
 }
 
 /* Cartas de Nosotros */
@@ -159,7 +172,7 @@ a {
 }
 
 .box-container .box p {
-    padding: 5px;
+    padding: 1px;
     font-size: 16px;
 }
 
