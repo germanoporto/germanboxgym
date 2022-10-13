@@ -20,16 +20,16 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
 
         <div class="container-fluid">
 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#inicio">
                 <img src="../img/logo.jpg" alt="Logo" height="50px" class="d-inline-block align-text-top">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
                 aria-label="Toggle navigation">
 
                 <span class="navbar-toggler-icon"></span>
@@ -38,8 +38,26 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
                     <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="../index.html">Volver a la
-                            página principal</a>
+                        <a class="nav-link active text-light" aria-current="page" href="#musculacion">Musculación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#funcional">Funcional Hiit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#gap">Gap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#jump">Jump</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#jiu">jiu-jitsu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#zumba">Zumba</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../index.html">Volver a pág.
+                            principal</a>
                     </li>
 
                 </ul>
@@ -49,9 +67,9 @@
     </nav>
     <!-- Encabezado -->
     <header>
-        <section class="header bg-dark bg-gradient ">
+        <section class="header bg-dark bg-gradient" id="inicio">
 
-            <h1 class="title-h1">ACTIVIDADE</h1>
+            <h1 class="title-act">ACTIVIDADES</h1>
             <p> <b>¡Bienvenidos a nuestra sección!</b> <br> Perspiciatis dolores
                 laboriosam dolorem, voluptatibus dolorum ipsam ab quibusdam in libero accusantium reprehenderit.</p>
 
@@ -60,92 +78,143 @@
 
     <main>
 
-        <section class="nosotros">
-            <div class="img-act">
-                <div>
-                    <img src="https://dummyimage.com/250x200/bababa/fff" style="width: 20rem;" class="img-thumbnail"
-                        alt="...">
-                    <p class="p-act">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magnam veniam quod delectus
-                        blanditiis ullam, sint molestiae beatae, sed qui, natus consequuntur officiis autem? Vero
-                        voluptas rem libero dolorum magnam.</p>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-outline-secondary">
-                        <a href="#registro">¡Quiero ser parte!</a>
-                    </button>
 
+        <!-- Cartas con Actividades del BOXGYM -->
+
+        <section class="clases-1">
+
+
+            <section class="clases">
+
+                <div class="card mb-3" id="musculacion">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <img src="../img/musculacion.jpeg" class="img-fluid rounded-start img-thumbnail" alt="...">
+                        </div>
+                        <div class="col-md-9 bg-dark">
+                            <div class="card-body">
+                                <h3 class="card-title"><b>Musculación</b></h3>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer. Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. </p>
+                                <p class="card-text"><small class="text-muted">Clases a cargo de Prof. Germán</small></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="img-act">
-                    <img src="https://dummyimage.com/250x200/bababa/fff" style="width: 20rem;" class="img-thumbnail"
-                        alt="...">
-                    <p class="p-act">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas earum dignissimos sunt eos?
-                        Eligendi praesentium dolorum debitis odit neque, aliquid eaque ipsam, expedita sit reprehenderit
-                        dignissimos? Porro sapiente tenetur explicabo.</p>
+            </section>
+
+            <section class="clases">
+
+                <div class="card mb-3" id="funcional">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <img src="../img/funcional.jpeg" class="img-fluid rounded-start img-thumbnail" alt="...">
+                        </div>
+                        <div class="col-md-9 bg-dark">
+                            <div class="card-body">
+                                <h3 class="card-title"><b>Funcional Hiit</b></h3>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer. Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit.</p>
+                                <p class="card-text"><small class="text-muted">Clases a cargo de Prof. Germán</small></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <button type="button" class="btn btn-outline-secondary">
-                        <a href="#registro">¡Quiero ser parte!</a>
-                    </button>
+            </section>
+            <section class="clases">
+
+                <div class="card mb-3" id="gap">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <img src="../img/gap.jpeg" class="img-fluid rounded-start img-thumbnail" alt="...">
+                        </div>
+                        <div class="col-md-9 bg-dark">
+                            <div class="card-body">
+                                <h3 class="card-title"><b>Gap</b></h3>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer. Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit.</p>
+                                <p class="card-text"><small class="text-muted">Clases a cargo de Prof. Germán</small></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="img-act">
-                    <img src="https://dummyimage.com/250x200/bababa/fff" style="width: 20rem;" class="img-thumbnail"
-                        alt="...">
-                    <p class="p-act">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ipsa repudiandae natus expedita
-                        culpa? Autem corrupti tempora harum esse, dolorum libero explicabo vero. Sed rerum atque
-                        corporis molestias nihil nam!</p>
+            </section>
+            <section class="clases">
+
+                <div class="card mb-3" id="jump">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <img src="../img/jump.jpeg" class="img-fluid rounded-start img-thumbnail" alt="...">
+                        </div>
+                        <div class="col-md-9 bg-dark">
+                            <div class="card-body">
+                                <h3 class="card-title"><b>Jump</b></h3>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer. Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit..</p>
+                                <p class="card-text"><small class="text-muted">Clases a cargo de Prof. Germán</small></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <button type="button" class="btn btn-outline-secondary">
-                        <a href="#registro">¡Quiero ser parte!</a>
-                    </button>
+            </section>
+            <section class="clases">
+
+                <div class="card mb-3" id="jiu">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <img src="../img/jiu-jitsu.jpeg" class="img-fluid rounded-start img-thumbnail" alt="...">
+                        </div>
+                        <div class="col-md-9 bg-dark">
+                            <div class="card-body">
+                                <h3 class="card-title"><b>jiu-jitsu</b></h3>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer. Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit.</p>
+                                <p class="card-text"><small class="text-muted">Clases a cargo de Prof. Germán</small></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="img-act">
-                    <img src="https://dummyimage.com/250x200/bababa/fff" style="width: 20rem;" class="img-thumbnail"
-                        alt="...">
-                    <p class="p-act">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo unde similique ipsam fuga,
-                        sequi excepturi alias hic at et, eum, placeat tenetur ipsum magnam? Cumque ipsa inventore nobis
-                        possimus laudantium.</p>
+            </section>
+            <section class="clases">
+                <div class="card mb-3" id="zumba">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <img src="../img/zumba.jpeg" class="img-fluid rounded-start img-thumbnail" alt="...">
+                        </div>
+                        <div class="col-md-9 bg-dark">
+                            <div class="card-body">
+                                <h3 class="card-title"><b>Zumba</b></h3>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer. Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit.</p>
+                                <p class="card-text"><small class="text-muted">Clases a cargo de Prof. Germán</small></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <button type="button" class="btn btn-outline-secondary">
-                        <a href="#registro">¡Quiero ser parte!</a>
-                    </button>
-                </div>
-            </div>
-            <div>
-                <div class="img-act">
-                    <img src="https://dummyimage.com/250x200/bababa/fff" style="width: 20rem;" class="img-thumbnail"
-                        alt="...">
-                    <p class="p-act">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore est, at eveniet corporis,
-                        nemo maiores reprehenderit aut, facilis similique omnis nobis? Alias ad maxime officia ipsa,
-                        reprehenderit iure dolores vitae!</p>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-outline-secondary">
-                        <a href="#registro">¡Quiero ser parte!</a>
-                    </button>
-                </div>
-            </div>
-            <div>
-                <div class="img-act">
-                    <img src="https://dummyimage.com/250x200/bababa/fff" style="width: 20rem;" class="img-thumbnail"
-                        alt="...">
-                    <p class="p-act">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis maiores tempore iusto
-                        obcaecati, in eaque temporibus nisi nulla dolorum dignissimos aliquam aut natus atque facere
-                        architecto maxime. Nostrum, ea blanditiis!</p>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-outline-secondary">
-                        <a href="#registro">¡Quiero ser parte!</a>
-                    </button>
-                </div>
-            </div>
+            </section>
+
+
         </section>
 
+
     </main>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

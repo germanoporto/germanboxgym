@@ -14,6 +14,7 @@
 
     <!-- Estilado css propio -->
     <link rel="stylesheet" href="css/main.css">
+    
     <title>BoxGymCentro - Página oficial</title>
 </head>
 
@@ -41,10 +42,10 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
                         <li class="nav-item">
                             <a class="nav-link active text-light" aria-current="page"
-                                href="pages/nosotros.html">Nosotros</a>
+                                href="#nosotros">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="pages/actividades.html">Actividades</a>
+                            <a class="nav-link text-light" href="#actividades">Actividades</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="pages/horarios.html">Horarios</a>
@@ -66,7 +67,7 @@
     </div>
 
     <!-- Encabezado -->
-    <header class="header bg-dark bg-gradient" id="inicio">
+    <header class="header-p bg-dark bg-gradient" id="inicio">
         <h1 class="title-h1">BOX GYM CENTRO</h1>
 
 
@@ -82,7 +83,7 @@
 
 
         <!-- Boton de suscripcion -->
-        <button type="button" class="btn btn-outline-secondary">
+        <button type="button" class="btn btn-dark">
             <a href="#registro">¡Quiero ser parte!</a>
         </button>
 
@@ -91,7 +92,7 @@
     <!-- Cuerpo de pagina con secciones  -->
     <main>
         <!-- Seccion nosotros -->
-        <section class="nosotros">
+        <section class="nosotros" id="nosotros">
             <h2 class="title-h2">NOSOTROS</h2>
             <p> Lorem ipsum, dolor sit amet consectetur temporibus laboriosam rem, quam, ea qu
                 od incidunt quisquam necessitatibus. Nihil nam consequuntur veritatis!</p>
@@ -138,17 +139,17 @@
 
         </section>
         <!-- Seccion actividades -->
-        <section class="actividades bg-dark bg-gradient">
+        <section class="actividades bg-dark" id="actividades">
             <h2 class="title-h2">ACTIVIDADES</h2>
             <p> Lorem ipsum, dolor sit amet consectetur temporibus laboriosam rem, quam, ea qu
                 od incidunt quisquam necessitatibus. Nihil nam consequuntur veritatis!</p>
 
             <div>
-                <img src="img/nosotros4.jpg" style="width: 20rem;" class="img-thumbnail" alt="...">
+                <img src="img/fondoactividades.jpeg" style="width: 20rem;" class="img-thumbnail" alt="...">
 
             </div>
             <!-- Boton hacia actividades.html -->
-            <button type="button" class="btn btn-outline-secondary">
+            <button type="button" class="btn btn-dark">
                 <a href="pages/actividades.html">Saber más</a>
             </button>
 
@@ -185,7 +186,7 @@
         </section>
 
         <!-- Seccion ubicacion y horarios -->
-        <section class="actividades bg-dark bg-gradient" id="ubicacion">
+        <section class="actividades bg-dark" id="ubicacion">
             <h2 class="title-h2">UBICACIÓN Y HORARIOS</h2>
             <!-- Carrousel de mapa y horarios -->
 
@@ -194,22 +195,16 @@
                     <div class="carousel-item active">
                         <iframe class="maps"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.8162666107023!2d-58.21142838560326!3d-34.7602208804193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f762c03dc5b%3A0x207e547e72be2616!2sBOX%20Gym!5e0!3m2!1ses-419!2sar!4v1663021928278!5m2!1ses-419!2sar"
-                            width="70%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            width="70%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="carousel-item">
                         <div class="ubication-hs">
                             <div class="ubication-hs2">
-                                <h3 class="title-ubication"><b>Lunes a Viernes</b></h3>
-                                <p>7 a 23hs</p>
-
-
-                                <h3 class="title-ubication"> <b>Sábados</b></h3>
-                                <p>9 a 18hs
-                                    <br>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    </br>
-                                </p>
+                                <div>
+                                    <img src="img/horarios2.jpeg" class="w-50 img-thumbnail" alt="...">
+                                </div>
+                                
                                 <!-- Botones a paginas Actividades y Horarios -->
 
                                 <button type="button" class="btn btn-outline-secondary">
@@ -245,7 +240,7 @@
 
     <footer>
         <!-- Seccion de Formulario -->
-        <section class="footer">
+        <section class="footer" id="registro">
             <h2 class="title-h2">¡Quiero ser parte!</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non qui sunt quaerat explicabo blan</p>
 
@@ -291,7 +286,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Enviar</button>
+                    <button class="btn btn-dark" type="submit">Enviar</button>
                 </div>
             </form>
 

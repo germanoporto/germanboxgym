@@ -25,12 +25,13 @@ body {
     padding: 20px;
     margin-top: 50px;
 }
+
 .title-h2 {
     text-transform: uppercase;
     font-family: sans-serif;
     font-size: 50px;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 
@@ -48,13 +49,17 @@ p {
     display: inline-block;
     padding: 10px;
     color: #f0f8ff;
-    margin-top: 20px;
+    margin: 30px;
     font-family: sans-serif;
     text-decoration: none;
-    background-color: #c9c3c3b5 !important;
+    background-color: #ffffff ;
 
 
 
+}
+
+a {
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -68,19 +73,34 @@ a {
 }
 
 /* Encabezado (presentacion) */
+
+.header-p {
+    color: #f0f8ff;
+    padding: 50px;
+    font-family: sans-serif;
+    background-image: url(../img/efecto1.jpg) !important;
+    background-size: cover;
+
+}
 .header {
     color: #f0f8ff;
     padding: 50px;
     font-family: sans-serif;
-    background-size: cover;
 
 }
 
 @media screen and (max-width:425px) {
     .title-h1 {
         font-size: 40px;
+        padding: 10px;
+    }
+
+    .title-h2 {
+        font-size: 40px;
         padding: 15px;
     }
+
+
 
     p {
         font-family: sans-serif;
@@ -124,12 +144,14 @@ a {
     padding: 15px;
     background-image: url(../img/fondo1a.jpg) !important;
     background-size: cover;
+
 }
 
 /* Seccion actividades */
 .actividades {
     color: #f0f8ff;
     padding: 15px;
+
 }
 
 /* Boxs de seccion de contacto  */
@@ -144,7 +166,7 @@ a {
 }
 
 .box-container .box {
-    height: 9rem;
+    height: 10rem;
     width: 17rem;
     background: #101010;
     text-align: center;
@@ -237,3 +259,143 @@ a {
     padding: 20px;
 }
 
+/* Titulo ACTIVIDADES de actividades.html */
+.title-act {
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 40px;
+    margin-top: 50px;
+
+}
+
+@media screen and (max-width: 320px) {
+    .title-act {
+        font-size: 35px;
+    }
+}
+
+/* Secciones de clases de Actividades */
+
+/* Fondos y estilados de cartas */
+.clases-1 {
+    background-image: url(../img/fondogym33.jpg) !important;
+    background-size: cover;
+}
+
+.clases {
+    color: #f0f8ff;
+    padding: 15px;
+
+}
+
+.card {
+    margin-top: 50px;
+
+}
+
+/* Titulos de Textos de Cartas */
+h3 {
+    text-transform: uppercase;
+    padding: 5px;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.card-text {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 375px) {
+    h3 {
+        font-size: 30px;
+    }
+}
+
+/* Seccion HORARIOS.HTML */
+
+/* Grid de Imagenes con horarios */
+
+@media screen and (min-width: 768px) {
+    .horarios {
+        display: grid;
+        grid-template-areas:
+            "img-act1 img-act2 img-act3"
+            "img-act4 img-act5 img-act6";
+        padding: 20px;
+    
+    }
+    
+    .img-act1 {
+        grid-area: img-act1;
+        margin-top: 50px;
+    }
+    
+    .img-act2 {
+        grid-area: img-act2;
+        margin-top: 50px;
+    }
+    
+    .img-act3 {
+        grid-area: img-act3;
+        margin-top: 50px;
+    
+    }
+    
+    .img-act4 {
+        grid-area: img-act4;
+        margin-top: 50px;
+    
+    }
+    
+    .img-act5 {
+        grid-area: img-act5;
+        margin-top: 50px;
+    
+    }
+    
+    .img-act6 {
+        grid-area: img-act6;
+        margin-top: 50px;
+    
+    }
+    
+    
+}
+
+.horarios {
+    padding: 20px;
+}
+
+.img-act1 {
+    margin-top: 50px;
+}
+
+.img-act2 {
+    margin-top: 50px;
+}
+
+.img-act3 {
+    margin-top: 50px;
+
+}
+
+.img-act4 {
+    margin-top: 50px;
+}
+
+.img-act5 {
+    margin-top: 50px;
+}
+
+.img-act6 {
+    margin-top: 50px;
+}
+
+/* Titulo h4 */
+
+.title-h4 {
+    padding: 20px;
+    font-size: 35px;
+}
