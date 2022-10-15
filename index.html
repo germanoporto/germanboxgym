@@ -14,7 +14,7 @@
 
     <!-- Estilado css propio -->
     <link rel="stylesheet" href="css/main.css">
-    
+
     <title>BoxGymCentro - Página oficial</title>
 </head>
 
@@ -41,8 +41,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page"
-                                href="#nosotros">Nosotros</a>
+                            <a class="nav-link active text-light" aria-current="page" href="#nosotros">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#actividades">Actividades</a>
@@ -57,7 +56,7 @@
                             <a class="nav-link text-light" href="#ubicacion">Ubicación</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="pages/cuestionario.html">¡Danos tu opinión!</a>
+                            <a class="nav-link text-light" href="#preguntas">Preg. Frecuentes</a>
                         </li>
                     </ul>
 
@@ -84,7 +83,7 @@
 
         <!-- Boton de suscripcion -->
         <button type="button" class="btn btn-dark">
-            <a href="#registro">¡Quiero ser parte!</a>
+            <a href="pages/cuestionario.html">¡Quiero ser parte!</a>
         </button>
 
     </header>
@@ -94,8 +93,10 @@
         <!-- Seccion nosotros -->
         <section class="nosotros" id="nosotros">
             <h2 class="title-h2">NOSOTROS</h2>
-            <p> Lorem ipsum, dolor sit amet consectetur temporibus laboriosam rem, quam, ea qu
-                od incidunt quisquam necessitatibus. Nihil nam consequuntur veritatis!</p>
+            <p> <b>¡Hola, somos BoxGym Centro!</b> <br> Creamos este espacio con el fin de lograr una mejora en tu vida
+                deportiva. Si queres saber más sobre nosotros, no dudes en visitar todas nuestras secciones. <br>
+                <b>¡Gracias por visitarnos!</b>
+            </p>
             <!-- Carrousel de imagenes -->
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
@@ -204,7 +205,7 @@
                                 <div>
                                     <img src="img/horarios2.jpeg" class="w-50 img-thumbnail" alt="...">
                                 </div>
-                                
+
                                 <!-- Botones a paginas Actividades y Horarios -->
 
                                 <button type="button" class="btn btn-outline-secondary">
@@ -215,87 +216,151 @@
                             </div>
 
                         </div>
-                    
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
 
 
         </section>
+
+
 
 
     </main>
 
 
-    <!-- Pie de pagina -->
+    <!-- Pie de pagina Preguntas Frecuentes -->
 
-    <footer>
-        <!-- Seccion de Formulario -->
-        <section class="footer" id="registro">
-            <h2 class="title-h2">¡Quiero ser parte!</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non qui sunt quaerat explicabo blan</p>
+    <footer id="preguntas">
 
+        <section class="preg-frecuentes1 bg-danger ">
 
-            <form class="row g-3">
-                <div class="col-md-4">
-                    <label for="validationDefault01" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="validationDefault01" value="Nombre" required>
-                </div>
-                <div class="col-md-4">
-                    <label for="validationDefault02" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="validationDefault02" value="Apellido" required>
-                </div>
-                <div class="col-md-4">
-                    <label for="validationDefaultUsername" class="form-label">Nombre de Usuario</label>
-                    <div class="input-group">
-                        <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                        <input type="text" class="form-control" id="validationDefaultUsername"
-                            aria-describedby="inputGroupPrepend2" required>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <label for="validationDefault03" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" id="validationDefault03" required>
-                </div>
-                <div class="col-md-3">
-                    <label for="validationDefault04" class="form-label">Estado</label>
-                    <select class="form-select" id="validationDefault04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>Buenos Aires, Argentina</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <label for="validationDefault05" class="form-label">Numero de celular</label>
-                    <input type="number" class="form-control" id="validationDefault05" required>
-                </div>
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                        <label class="form-check-label" for="invalidCheck2">
-                            Agree to terms and conditions
-                        </label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button class="btn btn-dark" type="submit">Enviar</button>
-                </div>
-            </form>
+            <!-- El contenedor de la categorias -->
+            <section id="principal" class="h-100 container-sm mx-auto bg-danger " style="max-width: 700px ;">
+
+                <h2 class="title-pf">Preguntas frecuentes</h2>
 
 
+
+                <!-- La primera categoria -->
+                <div class="accordion p-4" id="accordionExample">
+
+
+
+
+                    <!-- La segunda Categoria  -->
+
+                    <section>
+
+                        <div class="accordion-item my-6">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed bg-gradient bg-dark" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="bi bi-credit-card"></i>
+                                    <span class="px-3 text-white">¿Necesito el apto médico para empezar a
+                                        entrenar?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+
+                                    <div class="my-2">
+                                        <p class="pre-frecuentes">Tu apto médico vigente es <b>obligatorio</b> al
+                                            momento de
+                                            iniciar una actividad
+                                            física. Según la ley 139 art. 3 en decreto reglamentario Nº 1821, art. 6:
+                                            (para
+                                            Capital Federal) y
+                                            la ley 12329 art. 9 (para la provincia de Bs. As.) es obligatorio tener el
+                                            apto
+                                            médico al día para
+                                            ingresar a nuestras instalaciones. Una vez que lo tengas podrás enviarlo a
+                                            apto.medico@boxgym.com.ar
+                                            aclarando tu número de DNI.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- La tercera categoria  -->
+
+                        <div class="accordion-item my-6">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed bg-gradient bg-dark" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+                                    <i class="bi bi-arrow-return-left"></i>
+                                    <span class="px-3 text-white">¿Cómo se generan los cargos en mi cuenta?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+
+                                    <div class="my-2">
+                                        <p class="pre-frecuentes">Los cobros para cada período se realizarán 7 días
+                                            antes del
+                                            comienzo de cada mes de vigencia.
+                                            Los planes anuales están adheridos a AHORA 12 y podés sacarlos en 12 cuotas
+                                            sin
+                                            interés.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- La cuarta categoria  -->
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading4">
+                                <button class="accordion-button collapsed bg-gradient bg-dark" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="bi bi-percent"></i>
+                                    <span class="px-3 text-white">¿Cómo se abona la cuota?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="heading4"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+
+                                    <div class="my-4">
+                                        <p class="pre-frecuentes">En un Plan Mensual, el primer cargo en tu cuenta se
+                                            genera al momento de tu alta y corresponde al primer mes de vigencia de tu
+                                            Plan. La vigencia se renueva de forma automática cada mes el mismo día en el
+                                            que te diste de alta.
+                                            El Plan Anual se paga una única vez y el monto será distribuido en el número
+                                            de cuotas que selecciones al momento de realizar la compra.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </section>
         </section>
 
 
-
     </footer>
+
+
+
+
 
     <!-- Link script -->
 
