@@ -53,8 +53,7 @@ p {
     margin: 30px;
     font-family: sans-serif;
     text-decoration: none;
-    background-color: #ffffff ;
-
+    background-color: #ffffff;
 
 
 }
@@ -67,6 +66,21 @@ a {
     color: #ffffff;
     border-bottom: 2px solid #a40000;
     text-decoration: none;
+
+    animation-name: rotar;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+/* ANIMACIONES */
+
+@keyframes rotar {
+    0% {transform: rotate(0);}
+    50% {transform: rotate(80deg);}
+
+    100% {transform: rotate(360deg);}
+
 }
 
 a {
@@ -83,6 +97,7 @@ a {
     background-size: cover;
 
 }
+
 .header {
     color: #f0f8ff;
     padding: 50px;
@@ -90,34 +105,6 @@ a {
 
 }
 
-@media screen and (max-width:425px) {
-    .title-h1 {
-        font-size: 40px;
-        padding: 10px;
-    }
-
-    .title-h2 {
-        font-size: 40px;
-        padding: 15px;
-    }
-
-
-
-    p {
-        font-family: sans-serif;
-        font-size: 20px;
-        padding: 10px;
-        margin: 0px;
-        text-decoration: wavy;
-
-    }
-
-    .img-principal {
-        text-align: center;
-    }
-
-
-}
 
 .img-principal {
     margin-bottom: 20px;
@@ -133,11 +120,6 @@ a {
 
 }
 
-@media screen and (max-width:768px) {
-    .cartas {
-        padding: 20px;
-    }
-}
 
 /* Seccion nosotros */
 .nosotros {
@@ -271,11 +253,7 @@ a {
 
 }
 
-@media screen and (max-width: 320px) {
-    .title-act {
-        font-size: 35px;
-    }
-}
+
 
 /* Secciones de clases de Actividades */
 
@@ -308,91 +286,56 @@ h3 {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 375px) {
-    h3 {
-        font-size: 30px;
-    }
-}
+
 
 /* Seccion HORARIOS.HTML */
 
 /* Grid de Imagenes con horarios */
 
-@media screen and (min-width: 768px) {
-    .horarios {
-        display: grid;
-        grid-template-areas:
-            "img-act1 img-act2 img-act3"
-            "img-act4 img-act5 img-act6";
-        padding: 20px;
-    
-    }
-    
-    .img-act1 {
-        grid-area: img-act1;
-        margin-top: 50px;
-    }
-    
-    .img-act2 {
-        grid-area: img-act2;
-        margin-top: 50px;
-    }
-    
-    .img-act3 {
-        grid-area: img-act3;
-        margin-top: 50px;
-    
-    }
-    
-    .img-act4 {
-        grid-area: img-act4;
-        margin-top: 50px;
-    
-    }
-    
-    .img-act5 {
-        grid-area: img-act5;
-        margin-top: 50px;
-    
-    }
-    
-    .img-act6 {
-        grid-area: img-act6;
-        margin-top: 50px;
-    
-    }
-    
-    
-}
 
 .horarios {
+    display: grid;
+    grid-template-areas:
+        "img-act1 img-act2 img-act3"
+        "img-act4 img-act5 img-act6";
     padding: 20px;
+
 }
 
 .img-act1 {
+    grid-area: img-act1;
     margin-top: 50px;
 }
 
 .img-act2 {
+    grid-area: img-act2;
     margin-top: 50px;
 }
 
 .img-act3 {
+    grid-area: img-act3;
     margin-top: 50px;
 
 }
 
 .img-act4 {
+    grid-area: img-act4;
     margin-top: 50px;
+
 }
 
 .img-act5 {
+    grid-area: img-act5;
     margin-top: 50px;
+
 }
 
 .img-act6 {
+    grid-area: img-act6;
     margin-top: 50px;
+
 }
+
 
 /* Titulo h4 */
 
@@ -423,6 +366,72 @@ h3 {
     text-transform: uppercase;
     font-size: 45px;
     padding-top: 50px;
-    
+
 }
+
+
+
+/* MEDIA */
+
+@media screen and (max-width:768px) {
+    .cartas {
+        padding: 20px;
+    }
+
+    .horarios {
+
+        grid-template-areas:
+            "img-act1"
+            "img-act2"
+            "img-act3"
+            "img-act4"
+            "img-act5"
+            "img-act6";
+    }
+}
+
+
+
+@media screen and (max-width:425px) {
+    .title-h1 {
+        font-size: 40px;
+        padding: 10px;
+    }
+
+    .title-h2 {
+        font-size: 40px;
+        padding: 15px;
+    }
+
+
+
+    p {
+        font-family: sans-serif;
+        font-size: 20px;
+        padding: 10px;
+        margin: 0px;
+        text-decoration: wavy;
+
+    }
+
+    .img-principal {
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+    h3 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title-act {
+        font-size: 35px;
+    }
+}
+
+/* ANIMACIONES */
 
