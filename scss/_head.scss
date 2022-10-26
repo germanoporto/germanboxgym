@@ -1,0 +1,36 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* Navbar */
+.navbar a:hover {
+    color: #aeaeae;
+    border-bottom: 2px solid #a40000;
+    text-decoration: none;
+}
+
+// Imagen principal (LOGO)
+.img-principal {
+    margin-bottom: 20px;
+}
+
+
+// Parrafos 
+
+p {
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 0 100px;
+    margin-bottom: 25px;
+    text-decoration: wavy;
+}

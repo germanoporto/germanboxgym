@@ -1,0 +1,55 @@
+@import "variables";
+
+// HORARIOS.HTML 
+
+.horarios {
+    background-image: url(../img/fondo1a.jpg) !important;
+    background-size: cover;
+    color: $color-principal;
+}
+
+
+// Grid de Img con horarios
+
+.horarios {
+    display: grid;
+    grid-template-areas:
+        "img-act1 img-act2 img-act3"
+        "img-act4 img-act5 img-act6";
+    padding: $spacing;
+
+}
+
+.img-act1 {
+    grid-area: img-act1;
+    margin-top: $spacing-top;
+}
+
+.img-act2 {
+    grid-area: img-act2;
+    margin-top: $spacing-top;
+}
+
+.img-act3 {
+    grid-area: img-act3;
+    margin-top: $spacing-top;
+
+}
+
+.img-act4 {
+    grid-area: img-act4;
+    margin-top: $spacing-top;
+
+}
+
+.img-act5 {
+    grid-area: img-act5;
+    margin-top: $spacing-top;
+
+}
+
+.img-act6 {
+    grid-area: img-act6;
+    margin-top: $spacing-top;
+
+}

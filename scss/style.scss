@@ -1,0 +1,151 @@
+@import "head";
+@import "variables";
+@import "titulos";
+@import "secciones";
+@import "horarios";
+@import "boxs-contacto";
+@import "btn";
+
+
+
+// NOSOTROS.HTML
+
+.conoce {
+    color: $color-principal;
+    padding: $spacing;
+    @extend .instalaciones
+}
+
+.instalaciones {
+    background-image: url(../img/fondogym33.jpg);
+    background-size: cover;
+}
+
+// Cartas de Seccion NOSOTROS 
+
+.cartas {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+
+// ACTIVIDADES.HTML
+
+.img-act {
+    padding: 15px;
+}
+
+.p-act {
+    padding: 10px;
+}
+
+// Fondo y estilados de Cartas
+
+.clases-1 {
+    background-image: url(../img/fondogym33.jpg) !important;
+    background-size: cover;
+}
+
+.clases {
+    color: $color-principal;
+    padding: 15px;
+
+}
+
+.card {
+    margin-top: $spacing+30;
+
+}
+
+.card-text {
+    margin-top: $spacing;
+}
+
+// Estilado de Formulario de Ingreso
+
+.form1 {
+    background-color: #8f0000 !important;
+    background-size: cover;
+    padding: $spacing;
+}
+
+/* Estilado de Preguntas Frecuentes */
+
+.pre-frecuentes {
+    text-align: left;
+}
+
+
+.accordion-body {
+    background-color: #d4d4d4;
+    color: #131414;
+}
+
+.accordion-button {
+    background-color: #c7c7c7;
+}
+
+// MEDIAS
+
+@media screen and (max-width:768px) {
+    .cartas {
+        padding: $spacing;
+    }
+
+    .horarios {
+
+        grid-template-areas:
+            "img-act1"
+            "img-act2"
+            "img-act3"
+            "img-act4"
+            "img-act5"
+            "img-act6";
+    }
+}
+
+
+
+@media screen and (max-width:425px) {
+    .title-h1 {
+        font-size: 40px;
+        padding: 10px;
+    }
+
+    .title-h2 {
+        font-size: 40px;
+        padding: 15px;
+    }
+
+
+
+    p {
+        font-family: sans-serif;
+        font-size: 20px;
+        padding: 10px;
+        margin: 0px;
+        text-decoration: wavy;
+
+    }
+
+    .img-principal {
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+    h3 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title-act {
+        font-size: 35px;
+    }
+}

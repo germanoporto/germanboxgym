@@ -1,0 +1,52 @@
+@import "variables";
+
+// Boxs de Seccion de Contacto 
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.box-container {
+    @include flex;
+    color: $color-principal;
+    padding: 3rem;
+
+}
+
+.box-container .box {
+    height: 10rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem #00000080;
+    margin: 1rem;
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: $color-principal;
+    background: #8f0000;
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #8f0000;
+
+}
+
+.box-container .box p {
+    padding: 1px;
+    font-size: 16px;
+}

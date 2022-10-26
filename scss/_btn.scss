@@ -1,0 +1,44 @@
+
+@import "variables";
+
+/* Botones de navegaciones */
+.btn {
+    display: inline-block;
+    padding: 15px;
+    color: $color-principal;
+    margin: 30px;
+    font-family: $fuente;
+    text-decoration: none;
+    background-color: $color-principal;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: $color-principal;
+    border-bottom: 2px solid #a40000;
+    text-decoration: none;
+
+    animation-name: rotar;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+/* ANIMACIONES */
+
+@keyframes rotar {
+    0% {transform: rotate(0);}
+    50% {transform: rotate(80deg);}
+
+    100% {transform: rotate(360deg);}
+
+}
+
+a {
+    text-decoration: none;
+}

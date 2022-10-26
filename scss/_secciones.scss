@@ -1,0 +1,40 @@
+
+@import "variables";
+
+// SECCIONES 
+
+.header {
+    color: $color-principal;
+    padding: $spacing+30;
+    font-family: sans-serif;
+    background-image: url(../img/efecto1.jpg) !important;
+    background-size: cover;
+}
+
+// Imagen principal (LOGO)
+.img-principal {
+    margin-bottom: 20px;
+}
+
+.nosotros {
+    @extend .actividades;
+    background-image: url(../img/fondo1a.jpg) !important;
+    background-size: cover;
+}
+
+.actividades {
+    color: $color-principal;
+    padding: 15px;
+}
+
+.contacto {
+    @extend .actividades;
+    background-image: url(../img/fondob.jpg) !important;
+    background-size: cover;
+}
+
+.footer {
+    color: $color-principal;
+    background-color: #8f0000 !important;
+    padding: $spacing;
+}
