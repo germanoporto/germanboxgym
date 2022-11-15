@@ -40,6 +40,10 @@
         h3 {
             font-size: 20px;
             color: #8f0000;
+            animation-name: rotar;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in-out;
 
         }
 
@@ -49,4 +53,14 @@
         }
 
     }
+}
+ 
+// ANIMACION
+
+@keyframes rotar {
+    0% {transform: rotate(0);}
+    50% {transform: rotate(80deg);}
+
+    100% {transform: rotate(360deg);}
+
 }

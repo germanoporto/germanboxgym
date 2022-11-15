@@ -20,25 +20,8 @@ a {
 
 .btn:hover {
     color: $color-principal;
-    border-bottom: 2px solid #a40000;
-    text-decoration: none;
-
-    animation-name: rotar;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-}
-
-/* ANIMACIONES */
-
-@keyframes rotar {
-    0% {transform: rotate(0);}
-    50% {transform: rotate(80deg);}
-
-    100% {transform: rotate(360deg);}
-
-}
-
-a {
+    border-bottom: 3px solid #fadddd !important;
     text-decoration: none;
 }
+
+

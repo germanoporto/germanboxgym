@@ -119,34 +119,42 @@ h3 {
   text-align: center;
   color: #f0f8ff;
   padding: 3rem; }
+  .box-container .box {
+    height: 10rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem #00000080;
+    margin: 1rem; }
+    .box-container .box i {
+      height: 3rem;
+      width: 3rem;
+      line-height: 3rem;
+      text-align: center;
+      border-radius: 50%;
+      color: #f0f8ff;
+      background: #8f0000;
+      font-size: 2rem;
+      margin: 1rem 0; }
+    .box-container .box h3 {
+      font-size: 20px;
+      color: #8f0000;
+      animation-name: rotar;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in-out; }
+    .box-container .box p {
+      padding: 1px;
+      font-size: 16px; }
 
-.box-container .box {
-  height: 10rem;
-  width: 17rem;
-  background: #101010;
-  text-align: center;
-  border-radius: 1rem;
-  box-shadow: 0 .3rem 5rem #00000080;
-  margin: 1rem; }
-
-.box-container .box i {
-  height: 3rem;
-  width: 3rem;
-  line-height: 3rem;
-  text-align: center;
-  border-radius: 50%;
-  color: #f0f8ff;
-  background: #8f0000;
-  font-size: 2rem;
-  margin: 1rem 0; }
-
-.box-container .box h3 {
-  font-size: 20px;
-  color: #8f0000; }
-
-.box-container .box p {
-  padding: 1px;
-  font-size: 16px; }
+@keyframes rotar {
+  0% {
+    transform: rotate(0); }
+  50% {
+    transform: rotate(80deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 /* Botones de navegaciones */
 .btn {
@@ -163,23 +171,7 @@ a {
 
 .btn:hover {
   color: #f0f8ff;
-  border-bottom: 2px solid #a40000;
-  text-decoration: none;
-  animation-name: rotar;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out; }
-
-/* ANIMACIONES */
-@keyframes rotar {
-  0% {
-    transform: rotate(0); }
-  50% {
-    transform: rotate(80deg); }
-  100% {
-    transform: rotate(360deg); } }
-
-a {
+  border-bottom: 3px solid #fadddd !important;
   text-decoration: none; }
 
 .conoce {
